@@ -1,0 +1,29 @@
+//git command
+// Understading the basic github command
+// first create the example.txt file
+// then , git init -: to intialize the github 
+// after that : - git add 
+// git commit
+// git status
+// after that create the acc on github
+// then create repo, copy the url
+// then, git remote add origin <repository link> 
+// then finally git push origin master
+
+git init
+git add abc.html
+git commit -m "first commit"
+git status
+git diff
+git log
+// creating new branch feature
+git branch feature
+git checkout feature
+
+git checkout master
+
+git merge feature
+
+git remote add origin github.com\abc.html
+
+git push origin master
