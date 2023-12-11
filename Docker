@@ -1,0 +1,19 @@
+create two files
+
+1. Dockerfile
+
+# Use an official Apache image as the base image
+FROM httpd:2.4
+
+COPY ./index.html /usr/local/apache2/htdocs/
+
+2. index.html
+anything you want
+
+####
+command to run
+
+docker build my-apache-server .
+
+docker run -p 8080:80 my-apache-server
+###
