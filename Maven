@@ -1,0 +1,38 @@
+App.java file
+class App {
+    public static void main(String[] args) {
+        System.out.println("Hello, Maven!");
+    }
+}
+
+pom.xml file
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>my-maven-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <!-- Apache Commons Lang -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <!-- Google Guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>30.1-jre</version>
+        </dependency>
+    </dependencies>
+</project>
+
+Commands:
+mvn clean
+mvn compile
+mvn install
+
